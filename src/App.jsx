@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
-
+import feather from "feather-icons";
 import './App.css'
 import heroImg from "./assets/heroImg.jpg";
 import heroShape from "./assets/hero-shape.svg";
 import pakflag from "./assets/pakflag.png";
-
+import dotted from "./assets/dotted.png"
+import payment from "./assets/paymentGateway.png"
 function App() {
   return (
     <div>
@@ -112,6 +113,77 @@ function App() {
           <div class=" w-full absolute left-0 right-0  "> 
             <img src={heroShape} class="w-full object-fill scale-x-100"></img>
           </div>
+      </section>
+      {/* feature section */}
+      <section class="relative mt-[190px] overflow-hidden">
+        <img src={dotted} alt="dotted image"
+          loading='lazy' width="233" height="167"
+          class="absolute -top-[8rem] left-[10rem] inline-block -z-10"
+          />
+        
+         <img src={dotted} alt="dotted image"
+          loading='lazy' width="233" height="167"
+          class="absolute top-[3rem]  right-0 inline-block rotate-180"
+          />
+        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+          <h2  class="font-extrabold font-mullish text-center text-2xl leading-[1.2]">
+            Accept Payments with Razorpay Payment Suite</h2>
+          <div class="w-6 h-1 bg-greenLight mx-auto mt-6 mt-4"></div>
+
+          {/* content box */}
+          <div class="w-full border min-h-[520px] bg-white flex rounded-md relative p-10 py-12">
+            {/* left */}
+            <div class="flex flex-col justify-between  w-full" >
+              <h3 class="font-mullish text-[28px]  leading-10 font-bold max-w-[500px]">
+                Supercharge your bussiness with the all-powerful
+                <span class="text-lightBlue">Payment Gateway</span>
+              </h3>
+              <ul class="space-y-2">
+                <li class="font-mullish flex items-center space-x-2">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>100+ payments Methods</span>
+                </li>
+                <li class="font-mullish flex items-center space-x-2">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>Industry Leading Success Rate</span>
+                </li>
+                <li class="font-mullish flex items-center space-x-2">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>Superior Checkout Experience</span>
+                </li>
+                <li class="font-mullish flex items-center space-x-2">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>Easy to Integrate</span>
+                </li>
+                <li class="font-mullish flex items-center space-x-2">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>Instant Settelments from day 1</span>
+                </li>
+                <li class="font-mullish flex items-center space-x-2">
+                  <i data-feather="check" class="text-greenLight"></i>
+                  <span>In-depth Reporting and Insights</span>
+                </li>
+              </ul>
+              {/* button */}
+              <div class="flex flex-row items-center space-x-4 ">
+                <button class="bg-lightBlue w-fit text-white p-y-[14px] p-x-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200">Sign Up Now</button>
+                {/* hyperlink */}
+                <div class="flex items-center cursor-pointer">
+                  <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                  <i 
+                  data-feather="chevron-right" class="w-5 h-4 text-lightBlue500 group-hover:text-gray-50"></i>
+                </div>
+              </div>
+
+            </div>
+            {/* right */}
+            <div>
+              <img class="absolute max-w-[600px] right-0 bottom-0" src={payment} alt="" />
+            </div>
+            
+
+          </div>
+        </div>
       </section>
     </div>
   );

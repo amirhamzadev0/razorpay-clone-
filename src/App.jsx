@@ -1,9 +1,12 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+
 import './App.css'
+import heroImg from "./assets/heroImg.jpg";
+import heroShape from "./assets/hero-shape.svg";
 import pakflag from "./assets/pakflag.png";
+
 function App() {
   return (
     <div>
@@ -78,7 +81,38 @@ function App() {
           border  rounded-sm transition-all duration-200 hover:text-lightBlue500">Signup</button>
         </div>
       </div>
-      </nav>
+      </nav> 
+      {/* hero section */}
+      <section
+      class="relative bg-deepBlue ">
+        <div class="w-10/12 max-w-[1080px] flex flex-row justify-between items-center mx-auto   ">
+          {/* right part */}
+          <div class=" space-y-8">
+            <h1 class="font-mullish font-bold text-[40px] leading-[1.2] text-white">Power your finance,
+              grow your business</h1>
+            <div class="w-6 h-1 bg-lightBlue"></div>
+            <p class="font-mullish text-[18px] leading-7 text-white opacity-50 "> Accept pyments from customers. Automate
+               payouts to vendores &
+              employees. Never runout
+               of working capital.
+            </p>
+            <button class="bg-lightBlue text-white rounded-md font-mullish
+             font-bold hover:bg-lightBlue500
+             transition-all duration-200 py-[14px] px-[18px] ">Sign Up Now </button>
+          </div>
+          {/* left part */}
+          <div>
+            <img class="w-full max-w-[680px]" src={heroImg} alt="hero" width={"500px"} height={"500px"} />
+          </div>
+         
+
+
+        </div>
+         {/* shape */}
+          <div class=" w-full absolute left-0 right-0  "> 
+            <img src={heroShape} class="w-full object-fill scale-x-100"></img>
+          </div>
+      </section>
     </div>
   );
 }

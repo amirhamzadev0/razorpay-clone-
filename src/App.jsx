@@ -14,6 +14,9 @@ import xflam2 from "./assets/x-flame-2.png";
 import razorpayX from "./assets/razorpayX.svg";
 import buisnessbanking from "./assets/buisness-banking.png";
 import fsection2bg from "./assets/feature-section-2BG.svg";
+import razorpayXicon from "./assets/razorpayXicon.svg";
+import instantsettlementbg from "./assets/instant-settlement-bg.svg";
+import instantsettlementbghover from "./assets/instant-settlement-bghover.svg";
 
 
 
@@ -26,7 +29,7 @@ function App() {
         <div class="relative w-[1080px] mx-auto flex items-center justify-between" >
           {/*logo  */}
           <a hre="/" class="cursor-pointer py-7 pr-7">
-            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/razorpay-icon.png" alt="logo" width={"125px"} height={"30px"} />
+            <img src={razorpayX} alt="logo" width={"125px"} height={"30px"} />
           </a>
           {/* list */}
           <ul class="flex space-x-6">
@@ -387,60 +390,60 @@ function App() {
           {/* main feature box */}
           <div class="w-full min-h[440px] flex relative">
             <img src={xflam1} alt='xflam1'
-            loading="lazy" 
-            class="absolute -top-[142px] -left-[140px] w-[200px]"
+              loading="lazy"
+              class="absolute -top-[142px] -left-[140px] w-[200px]"
             ></img>
             <img src={xflam2} alt='xflam2'
-             loading="lazy" 
-            class="absolute top-[150px] -right-[180px] w-[270px]"
+              loading="lazy"
+              class="absolute top-[150px] -right-[180px] w-[270px]"
             ></img>
 
             {/* content box */}
             <div class="w-full bg-deepBlue  min-h-[520px]  flex rounded-md relative p-10 py-12 border-blue-800">
               {/* left */}
               <div class=" flex flex-col justify-between w-full gap-10">
-              <h3 class="font-mullish text-[28px] text-white leading-10 font-bold max-w-[500px]" >Manage Your company's finances with
-                <img src={razorpayX} alt="" 
-                loading='lazy' width="168px" height="32px" 
-                class="inline-block "/>
-                <span class="text-greenLight">Business Banking</span>
-              </h3>
-              <ul class="space-y-2">
-                <li class="font-mullish flex items-center space-x-2 text-white">
-                  <i data-feather="check" class="text-greenLight"></i>
-                  <span>open a fully digital current account</span>
-                </li>
-                <li class="font-mullish flex items-center space-x-2 text-white">
-                  <i data-feather="check" class="text-greenLight"></i>
-                  <span>open a fully digital current account</span>
-                </li>
-                <li class="font-mullish flex items-center space-x-2 text-white">
-                  <i data-feather="check" class="text-greenLight"></i>
-                  <span>open a fully digital current account</span>
-                </li>
-                <li class="font-mullish flex items-center space-x-2 text-white">
-                  <i data-feather="check" class="text-greenLight"></i>
-                  <span>open a fully digital current account</span>
-                </li>
-              </ul>
-              <div class="flex flex-row items-center space-x-4 ">
-                <button class="bg-lightBlue w-fit text-white p-y-[14px] p-x-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200">Sign Up Now</button>
-                {/* hyperlink */}
-                <div class="flex items-center cursor-pointer">
-                  <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
-                  <i
-                    data-feather="chevron-right" class="w-5 h-4 text-lightBlue500 group-hover:text-gray-50"></i>
+                <h3 class="font-mullish text-[28px] text-white leading-10 font-bold max-w-[500px]" >Manage Your company's finances with
+                  <img src={razorpayX} alt=""
+                    loading='lazy' width="168px" height="32px"
+                    class="inline-block " />
+                  <span class="text-greenLight">Business Banking</span>
+                </h3>
+                <ul class="space-y-2">
+                  <li class="font-mullish flex items-center space-x-2 text-white">
+                    <i data-feather="check" class="text-greenLight"></i>
+                    <span>open a fully digital current account</span>
+                  </li>
+                  <li class="font-mullish flex items-center space-x-2 text-white">
+                    <i data-feather="check" class="text-greenLight"></i>
+                    <span>open a fully digital current account</span>
+                  </li>
+                  <li class="font-mullish flex items-center space-x-2 text-white">
+                    <i data-feather="check" class="text-greenLight"></i>
+                    <span>open a fully digital current account</span>
+                  </li>
+                  <li class="font-mullish flex items-center space-x-2 text-white">
+                    <i data-feather="check" class="text-greenLight"></i>
+                    <span>open a fully digital current account</span>
+                  </li>
+                </ul>
+                <div class="flex flex-row items-center space-x-4 ">
+                  <button class="bg-lightBlue w-fit text-white p-y-[14px] p-x-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200">Sign Up Now</button>
+                  {/* hyperlink */}
+                  <div class="flex items-center cursor-pointer">
+                    <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                    <i
+                      data-feather="chevron-right" class="w-5 h-4 text-lightBlue500 group-hover:text-gray-50"></i>
+                  </div>
                 </div>
               </div>
-              </div>
-              
+
               {/* bg image */}
-              <img src={buisnessbanking} alt="" 
-              class=" max-w-[400px] "/>
-            
-            
+              <img src={buisnessbanking} alt=""
+                class=" max-w-[400px] " />
+
+
             </div>
-            
+
           </div>
           <div class="w-full grid grid-cols-3 gap-4 mt-10">
             {/* box1 */}
@@ -521,21 +524,103 @@ function App() {
                 </div>
               </div>
             </div>
-            
+
 
           </div>
 
-        {/* demo */}
-        <div class=" w-full flex items-center justify-between relative rounded-md border-2 mt-20 py-8 px-3  border-slate-700 gap-y-6">
-          <p class="font-mullish text-black text-xl">Check out the live demo to learn how RazorpayX works. 
-            <span class="font-bold">No Signup Required!</span>
-          </p>
-          <button class="bg-lightBlue w-fit text-white p-y-[14px] p-x-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 ">Check out the demo</button>
+          {/* demo */}
+          <div class=" w-full flex items-center justify-between relative rounded-md border-2 mt-20 py-8 px-3  border-slate-700 gap-y-6">
+            <p class="font-mullish text-black text-xl">Check out the live demo to learn how RazorpayX works.
+              <span class="font-bold">No Signup Required!</span>
+            </p>
+            <button class="bg-lightBlue w-fit text-white p-y-[14px] p-x-[18px] rounded-md font-mullish font-bold hover:bg-lightBlue500 transition-all duration-200 ">Check out the demo</button>
+          </div>
+
+
+
+
         </div>
 
+      </section>
 
 
 
+      {/* new features */}
+      <section class=" bg-white relative ">
+        <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+          <img src={dotted} alt="" 
+          class="absolute w-[233px] left-[300px] -top-[6rem] -z-[10]" />
+          <img src={dotted} alt="" 
+          class="absolute w-[233px] -right-[3.5rem] -top-[10]"/>
+          <div class="w-full grid grid-cols-3 gap-y-10 gap-x-4 relative z-[10]">
+            {/* item */}
+            <div class="relative flex items-center">
+              <h2 class="font-mullish text-deepBlueHead font-extrabold text-4xl leading-[3-375rem]">New in the 
+                <br /> <span class="text-lightBlue">Razorpay</span><br></br>
+                Product Suite
+              </h2>
+            </div>
+            {/* card 1 */}
+            <div class="p-10 bg-[url(./assets/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(./assets/instant-settlement-bghover.svg)]  bg-white">
+          <img src={razorpayXicon} alt="" 
+          class="w-10 h-10" />
+              <h3 class="font-mullish text-lg font-bold pt-4">Corporate Card</h3>
+              <p class="font-mullish py-3 text-grayText leading-normal ">Simplify your recrring,international and team expenses with saving on every spend.Save upto 10 lacs every month</p>
+              <div class="flex items-center cursor-pointer">
+                  <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                  <i
+                    data-feather="chevron-right" class="w-5 h-4 text-lightBlue500 group-hover:text-gray-50"></i>
+                </div>
+            </div>
+            {/* card 2 */}
+            <div class="p-10 bg-[url(./assets/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(./assets/instant-settlement-bghover.svg)]  bg-white">
+          <img src={razorpayXicon} alt="" 
+          class="w-10 h-10" />
+              <h3 class="font-mullish text-lg font-bold pt-4">Corporate Card</h3>
+              <p class="font-mullish py-3 text-grayText leading-normal ">Simplify your recrring,international and team expenses with saving on every spend.Save upto 10 lacs every month</p>
+              <div class="flex items-center cursor-pointer">
+                  <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                  <i
+                    data-feather="chevron-right" class="w-5 h-4 text-lightBlue500 group-hover:text-gray-50"></i>
+                </div>
+            </div>
+            {/* card 3 */}
+            <div class="p-10 bg-[url(./assets/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(./assets/instant-settlement-bghover.svg)]  bg-white">
+          <img src={razorpayXicon} alt="" 
+          class="w-10 h-10" />
+              <h3 class="font-mullish text-lg font-bold pt-4">Corporate Card</h3>
+              <p class="font-mullish py-3 text-grayText leading-normal ">Simplify your recrring,international and team expenses with saving on every spend.Save upto 10 lacs every month</p>
+              <div class="flex items-center cursor-pointer">
+                  <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                  <i
+                    data-feather="chevron-right" class="w-5 h-4 text-lightBlue500 group-hover:text-gray-50"></i>
+                </div>
+            </div>
+            {/* card 4 */}
+            <div class="p-10 bg-[url(./assets/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(./assets/instant-settlement-bghover.svg)]  bg-white">
+          <img src={razorpayXicon} alt="" 
+          class="w-10 h-10" />
+              <h3 class="font-mullish text-lg font-bold pt-4">Corporate Card</h3>
+              <p class="font-mullish py-3 text-grayText leading-normal ">Simplify your recrring,international and team expenses with saving on every spend.Save upto 10 lacs every month</p>
+              <div class="flex items-center cursor-pointer">
+                  <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                  <i
+                    data-feather="chevron-right" class="w-5 h-4 text-lightBlue500 group-hover:text-gray-50"></i>
+                </div>
+            </div>
+            {/* card 5 */}
+            <div class="p-10 bg-[url(./assets/instant-settlement-bg.svg)] w-full max-h-[300px] cursor-pointer bg-no-repeat hover:scale-105 transition-all duration-200 hover:bg-[url(./assets/instant-settlement-bghover.svg)] bg-white">
+          <img src={razorpayXicon} alt="" 
+          class="w-10 h-10" />
+              <h3 class="font-mullish text-lg font-bold pt-4">Corporate Card</h3>
+              <p class="font-mullish py-3 text-grayText leading-normal ">Simplify your recrring,international and team expenses with saving on every spend.Save upto 10 lacs every month</p>
+              <div class="flex items-center cursor-pointer">
+                  <a href="#" class="font-mullish font-bold text-lightBlue500 group-hover:text-gray-50 transition-all duration-200">Know More</a>
+                  <i
+                    data-feather="chevron-right" class="w-5 h-4 text-lightBlue500 group-hover:text-gray-50"></i>
+                </div>
+            </div>
+          </div>
         </div>
 
       </section>

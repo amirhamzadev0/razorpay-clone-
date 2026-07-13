@@ -3,3 +3,16 @@
   padding-top: 12rem;
   padding-bottom: 12rem;
 }
+.moveimage{
+  animation: 10s infinite linear movecompany;
+}
+@keyframes movecompany
+ {
+  0%{
+    top: 0;
+  }
+  100%{
+    top:-50%;
+  }
+  
+}

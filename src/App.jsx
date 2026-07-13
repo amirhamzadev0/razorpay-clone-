@@ -19,12 +19,16 @@ import instantsettlementbg from "./assets/instant-settlement-bg.svg";
 import instantsettlementbghover from "./assets/instant-settlement-bghover.svg";
 import instantactivationicon from "./assets/instant-activation-icon.svg";
 import corefeaturessectionBg from "./assets/core-features-sectionBg.svg";
+import comanies from "./assets/comanies.png";
 
 
 
 
 function App() {
   return (
+    <div class="overflow-x-hidden relative w-full">
+
+    
     <div>
       <nav class="bg-deepBlue">
         <div class="relative w-[1080px] mx-auto flex items-center justify-between" >
@@ -627,7 +631,7 @@ function App() {
 
       </section>
       {/* core features */}
-      <section class="w.full bg-[url(./assets/core-features-sectionBg.svg)]  bg-no-repeat bg-cover mt-14 relative corefeaturesection">
+      <section class="w.full bg-[url(./assets/core-features-sectionBg.svg)]  bg-no-repeat bg-cover mt-14 relative z-20 corefeaturesection">
         <div class="relative w-11/12 max-w-[1080px] mx-auto pt-4">
           <h2 class="font-mullish font-bold text-xxl text-center text-white">Features</h2>
           <div class="w-6 h-1 bg-greenLight text-center mx-auto mt-4 mb-6"></div>
@@ -704,7 +708,32 @@ function App() {
           </div>
         </div>
       </section>
+
+
+
+{/* join razor pay section  */}
+<section class="bg-[#f5f8fe] relative z-10 pt-40 pb-20 -mt-[200px] ">
+  <div class="w-11/12 max-w-[1080px] mx-auto relative flex">
+    {/* left part */}
+    <div class="flex flex-col justify-center max-w-[calc(100%-500px)]">
+      <h3 class="font-mullish font-bold text-2xl text-deepBlue">Join the 50,00,000+ businesses that accept payments with Razorpay
+        
+      </h3>
+      <div class="w-6 h-1 bg-greenLight mx-auto my-4 mb-10 ml-0"></div>
+      <p class="font-mullish opacity-80">we make it easy for businesses to accept payments online on simplifying your payments.become one of us by joining thousands of our happy users and simplifying your payment processes.</p>
+      <p class="font-mullish mt-6 opacity-80">Focus on your business while we handle the payments for you.</p>
     </div>
+    {/* right part */}
+    <div class="h-[500px] w-[500px] relative overflow-hidden">
+     
+      <img src={comanies} alt="" 
+      class="absolute h-auto object-cover moveimage"/>
+     
+    </div>
+  </div>
+</section>
+    </div>
+    </div>  
   );
 }
 

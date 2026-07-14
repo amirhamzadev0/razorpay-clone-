@@ -1485,12 +1485,12 @@ function App() {
               REGD. OFFICE ADDRESS
             </p>
             <p class="font-mullish text-sm mt-4 whitespace-nowrap">
-              Razorpay Software Private Limited, <br />1st Floor, SJR Cyber,
-              <br />22 Laskar Hosur Road, Adugodi, <br />Bengaluru, 560030,
-              <br />Karnataka, India <br />CIN: U72200KA2013PTC097389
+              Razorpay Software Private Limited, <br />1st Floor, dubai plaza,
+              <br />rawalpinid ,islamabad <br />jinah camp
+              <br />islamabad, pakistan <br />CINc.000000000000000
             </p>
             <div class="font-mullish mt-6">
-              <p class="text-sm">© Razorpay 2022</p>
+              <p class="text-sm">© Razorpay 2026</p>
               <p class="text-sm">All Rights Reserved</p>
             </div>
           </div>

@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
-import feather from "feather-icons";
 import './App.css'
+import feather from 'feather-icons';
 import heroImg from "./assets/heroImg.jpg";
 import heroShape from "./assets/hero-shape.svg";
 import pakflag from "./assets/pakflag.png";
@@ -20,7 +20,10 @@ import instantsettlementbghover from "./assets/instant-settlement-bghover.svg";
 import instantactivationicon from "./assets/instant-activation-icon.svg";
 import corefeaturessectionBg from "./assets/core-features-sectionBg.svg";
 import comanies from "./assets/comanies.png";
+import quotes from "./assets/quotes.svg";
+import fakecompanylogo from "./assets/fake-company-logo.png"
 
+import ah from "./assets/amir-hamza.jpg";
 
 
 
@@ -732,8 +735,66 @@ function App() {
     </div>
   </div>
 </section>
+
+
+{/* testimonial section */}  
+
+<section class="relative">
+  <div class="w-11/12 max-w-[1300px] mx-auto relative py-20">
+    <img src={dotted} alt="" 
+    class="absolute w-[200px] top-[8rem] left-[2rem] -z-[10]" />
+    <h2 class="font-mullish font-extrabold text-2xl text-deepBlue text-center">An Experience 
+<br />People Love to Talk About
+    </h2>
+    <div class="w-6 h-1 bg-greenLight mx-auto my-4" ></div>
+  
+  {/* left button */}
+  <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute left-0 top-1/2 flex justify-center items-center">
+    <div class="w-[50px] h-[50px] bg-gray-200 rounded-full absolute left-0 top-1/2" > 
+      <i
+      data-feather="chevron-left"
+      class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">
+
+      </i>
+    </div>
+  </button>
+  {/* right button */}
+ <button class="w-[100px] h-[100px] bg-[#f4f8ff] rounded-full absolute right-0 top-1/2 flex justify-center items-center">
+    <div class="w-[50px] h-[50px] bg-gray-200 rounded-full absolute right-0 top-1/2" > 
+       <i
+      data-feather="chevron-right"
+      class="stroke-[5px] w-6 h-6 md:w-10 md:h-10 text-gray-400">
+
+      </i>
+    </div>
+  </button>
+  {/* main content */}
+  <div class="flex  max-w-[960px] items-center mx-auto my-20 gap-24 ">
+    {/* left img */}
+    <img src={ah} alt="" 
+    height="320px"
+    width="320px"
+    class="rounded-xl"/>
+    {/* right part */}
+    <div>
+      <img src={quotes} alt="" 
+      height="35px"
+      width="40px"
+      class="-mb-2"/>
+      <p class="font-mullish text-3xl font-extralight">Readymade Closed Wallet Solution For Quick Refunds</p>
+      <a href="#" class="text-grayText italic underline">Learn More</a>
+      <h3 class="font-mullish font-extrabold text-2xl">Amir Hamza</h3>
+      <p class="font-mullish font-medium">CEO,TRANSITEYE COMPANY</p>
+      <img src={fakecompanylogo} alt="" height="40" width="80" />
+    </div>
+  </div>
+  {/* 6 dot */}
+  
+  </div>
+</section>
     </div>
     </div>  
+
   );
 }
 
